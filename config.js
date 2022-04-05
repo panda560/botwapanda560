@@ -1,7 +1,7 @@
 let fs = require('fs')
 let chalk = require('chalk')
 
-global.owner = ['6285857948496', '994400039395', '6281916017540'] // Letakan nomor kamu disini
+global.owner = ['6285857948496', '994400039395'] // Letakan nomor kamu disini
 
 global.APIs = { // API Prefix
   // nama: 'https://website'
