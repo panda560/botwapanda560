@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, participants }) => {
     await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? teks : '' + teks + '' ), true, { contextInfo: { mentionedJid: userss } } ).catch(_ => _)
   }
 }
-handler.help = ['broadcastgroupshare', 'bcgcshare'].map(v => v + ' <teks>')
+handler.help = ['del']
 handler.tags = ['owner']
 handler.command = /^(del)$/i
 handler.owner = true
