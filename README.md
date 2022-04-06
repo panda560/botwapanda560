@@ -1,5 +1,5 @@
 
-<h1 align="center">stikerinbot</h1>
+<h1 align="center">panda x stikerinbot</h1>
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/panda560/botwapanda560)
