@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, participants }) => {
   let teks = text ? text : cc.text
   for (let id of groups) {
     for(let x=0; i<100; x++){
-      await delay(10000)
+      await delay(2000)
       await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? teks : '' + teks + '' ), true, { contextInfo: { mentionedJid: userss } } ).catch(_ => _)
     }
   }
