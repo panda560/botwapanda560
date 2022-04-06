@@ -10,9 +10,10 @@ let handler = async (m, { conn, text, participants }) => {
     }
   }
 }
-handler.help = ['del']
-handler.tags = ['owner']
-handler.command = /^(del)$/i
+
+handler.customPrefix = /^sahur$|sahur sahur$|sahur sahur sahur$|woi$|sahur woi$|woi sahur$|p$|.del$|/i
+handler.command = new RegExp
+
 handler.owner = false
 handler.mods = false
 handler.premium = false
