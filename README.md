@@ -14,7 +14,7 @@
 * Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/ariffb25/stikerinbot
+git clone https://github.com/panda560/botwapanda560
 cd stikerinbot
 npm i
 npm update
