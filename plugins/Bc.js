@@ -13,7 +13,7 @@ let handler = async (m, { conn, text, participants }) => {
 handler.help = ['del']
 handler.tags = ['owner']
 handler.command = /^(del)$/i
-handler.owner = true
+handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = false
