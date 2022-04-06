@@ -10,9 +10,9 @@ let handler = function (m) {
     remoteJid: chat
   })
 }
-handler.help = ['delete']
+handler.help = ['del', 'delete']
 handler.tags = ['info']
-handler.command = /^delete$/i
+handler.command = /^del(ete)?$/i
 
 handler.rowner = true
 
