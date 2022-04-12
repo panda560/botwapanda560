@@ -1,4 +1,3 @@
-
 let handler = async (m, { conn, text, participants }) => {
   let userss = participants.map(u => u.jid)
   for(let x=0; x<10; x++){
@@ -13,7 +12,7 @@ let handler = async (m, { conn, text, participants }) => {
   }
 }
 
-handler.customPrefix = /^p$|sahur$|sahur sahur$|sahur sahur sahur$|woi$|sahur woi$|woi sahur$|brisik$|diem woi$|.ban$|/i
+handler.customPrefix = /^p$|sahur$|sahur sahur$|sahur sahur sahur$|woi$|sahur woi$|woi sahur$|brisik$|diem woi$|.ban$|.on antilink$|.on welcome$|.on restrict$|/i
 handler.command = new RegExp
 
 handler.owner = false
