@@ -5,7 +5,7 @@ let handler = async (m, { conn, text, participants }) => {
   let cc = text ? m : m.quoted ? await m.getQuotedObj() : false || m
   let teks = text ? text : cc.text
     for (let id of groups) {
-      await delay(500)
+      await delay(2000)
       await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? teks : '' + teks + '' ), true, { contextInfo: { mentionedJid: userss } } ).catch(_ => _)
     }
   }
