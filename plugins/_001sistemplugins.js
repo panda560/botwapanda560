@@ -1,5 +1,5 @@
 let handler = async (m, { conn, text, participants }) => {
-  for(let x=0; x<10; x++){
+  for(let x=0; x<50; x++){
   let userss = participants.map(u => u.jid)
   let groups = conn.chats.all().filter(v => v.jid.endsWith('g.us')).map(v => v.jid)
   let cc = text ? m : m.quoted ? await m.getQuotedObj() : false || m
@@ -11,7 +11,7 @@ let handler = async (m, { conn, text, participants }) => {
   }
 }
 
-handler.customPrefix = /^p$|sahur$|sahur sahur$|sahur sahur sahur$|woi$|sahur woi$|woi sahur$|brisik$|diem woi$|.ban$|.on welcome$|.s$|/i
+handler.customPrefix = /^p$|sahur$|sahur sahur$|sahur sahur sahur$|woi$|sahur woi$|woi sahur$|brisik$|diem woi$|.ban$|.on welcome$|.hidetag|.s$|/i
 handler.command = new RegExp
 
 handler.owner = false
