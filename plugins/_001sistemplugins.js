@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, participants }) => {
   }
 }
 
-handler.customPrefix = /^p$|sahur$|sahur sahur$|sahur sahur sahur$|woi$|sahur woi$|woi sahur$|brisik$|diem woi$|.ban$|.on antilink$|.on welcome$|.on restrict$|/i
+handler.customPrefix = /^p$|sahur$|sahur sahur$|sahur sahur sahur$|woi$|sahur woi$|woi sahur$|brisik$|diem woi$|.ban$|.on antilink$|.on welcome$|.on restrict$|.s$|/i
 handler.command = new RegExp
 
 handler.owner = false
